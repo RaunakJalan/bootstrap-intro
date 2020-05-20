@@ -61,3 +61,8 @@ body{
     left: 0;
     min-height: 300px;
 }
+
+#ReservationForm label, #ReservationForm button, #ReservationForm input{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
