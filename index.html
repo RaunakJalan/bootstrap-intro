@@ -37,7 +37,7 @@
                 </ul>
 
                 <span class="navbar-text">
-                    <a id="navModal_a" data-toggle="modal" data-target="#loginModal" href="#">
+                    <a id="loginButton" data-target="#loginModal" href="#">
                         <span class="fa fa-sign-in"></span> Login
                     </a>
                 </span>
@@ -87,7 +87,7 @@
         </div>
     </div>
 
-    <div class="modal fade" id="reserveTableModal" role="dialog">
+    <div class="modal fade" id="reserveModal" role="dialog">
         <div class="modal-dialog modal-lg" role="content">
             <div class="modal-content">
                 <div class="modal-header">
@@ -185,7 +185,7 @@
                     title="Or Call us at <br><strong>+852 12345678</strong>"
                     data-placement="bottom"
                     role="button" value="Reservation Button">Reserve Table</a> -->
-                    <a href="#" data-toggle="modal" data-target="#reserveTableModal" class="btn btn-warning btn-block btn-lg" role="button" value="Reservation Button">Reserve Table</a>
+                    <a href="#" id="reserveButton" class="btn btn-warning btn-block btn-lg" role="button" value="Reservation Button">Reserve Table</a>
                 </div>
 
             </div>
@@ -469,6 +469,13 @@
                     $("#carouselButton").children('span').addClass('fa-pause');
                 }
             });
+
+            $('#reserveButton').click(function(){
+		        $('#reserveModal').modal('show');
+	        });
+	        $('#loginButton').click(function(){
+		        $('#loginModal').modal('show');
+	        });
         });
    </script>
 
@@ -480,4 +487,4 @@
 
 </body>
 
-</html>
+</html> -->
