@@ -150,7 +150,7 @@ module.exports = function (grunt) {
     });
 
     grunt.registerTask('css', ['sass']);
-    grunt.registerTask('default', ['browserSync', 'watch']);
+    grunt.registerTask('default', ['browserSync']);
     grunt.registerTask('build',[
         'clean',
         'copy',
